@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gst Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Gst calculator India</h1>
+    </header>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="input">
+                <h2>Enter Amount</h2>
+                <input type="number" name="" id="input-gst">
+            </div>
+            <div class="radios">
+                <input type="radio" name="gst-type" id="intra-state">
+                <label for="intra-state">Intra State</label>
+                <input type="radio" id="inter-state" name="gst-type">
+                <label for="inter-state">Inter State</label>
+            </div>
+            <div id="generate-btn">
+                <button id="generate">Generate</button>
+            </div>
+            <div class="percentage">
+                <div id="intra-state-tag">
+                    <select name="" id="select" style="display: none;">
+                        <option value="">Select GST Percentage</option>
+                        <option value="+3">+3%</option>
+                        <option value="+5">+5%</option>
+                        <option value="+12">+12%</option>
+                        <option value="+18">+18%</option>
+                        <option value="+28">+28%</option>
+                        <option value="-3">-3%</option>
+                        <option value="-5">-5%</option>
+                        <option value="-12">-12%</option>
+                        <option value="-18">-18%</option>
+                        <option value="-28">-28%</option>
+                    </select>
+                    <button  class="calculate" style="display:none" >Calculate</button>
+                </div>
+                <p class="inter-state-alert" style="display:none">Inter State is not yet available!</p>
+                <table id="result-container-intra-state">
+
+                    
+                    
+                </table>
+              <p id="result" style="display:none">Toal Amount = Rs.</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+
+header{
+    width: 100%;
+
+}
+header h1{
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+}
+
+.container .calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.percentage #intra-state-tag{
+
+    display: flex;
+    gap: 20px;
+}
+
+.calculator input{
+    height: 30px;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.calculator .radios {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#inter-state{
+    margin-left: 10px;
+}
+
+.calculator .radios label{
+
+    cursor: pointer;
+}
+
+.calculator .radios input{
+    margin: 0;
+    padding: 0;
+    bord;
+}
+table{
+    margin-top: 2rem;
+    
+    border-collapse:  collapse;
+}
+
+td, th{
+    width: 100px;
+    width: 250px;
+    height: 60px;
+    border:  solid grey;
+
+}
+
+tr:nth-child(even){
+    background-color: hsl(0, 0%, 80%);
+}
+
+td{
+    text-align: center;
+}
+
+ 
+button{
+    width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: hsl(271, 76%, 80%);
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: hsl(271, 76%, 70%)
+}
+
+.calculator .percentage select{
+    padding: 5px;
+    font-size: 1rem;
+}
+
